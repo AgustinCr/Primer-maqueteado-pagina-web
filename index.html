@@ -7,40 +7,42 @@
     <title>Cruz Agustin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Sofia+Sans+Condensed:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="text.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Sofia+Sans+Condensed:wght@600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="text.css"/>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="shortcut icon" href="imagenes/gato.png" type="image/x-icon">
   </head>
 
   <body>
-    <div class="contenedor-principal">
-      <div class="header">
-        <h1>"El proceso pesa mas que el resultado"</h1>
+      <header>
+        <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 id="titulo-principal">"El proceso pesa más que el resultado"</h1>
+          </div>
+        </div>
+        <div class="row" id="navegador">
+          <div class="col"><p><a href="#datos_personales" class="link">Datos personales</a></p></div>
+          <div class="col"><p><a href="#trayectoria" class="link">Trayectoria académica</a></p></div>
+          <div class="col"><p><a href="#hobbies" class="link">Hobbies</a></p></div>
+          <div class="col"><p><a href="#contacto" class="link">Contacto</a></p></div>    
+        </div> 
       </div>
-      <div class="navegador">
-        <ul>
-          <li><a href="#datos_personales" class="link">Datos personales</a></li>
-          <li><a href="#trayectoria" class="link">Trayectoria academica</a></li>
-          <li><a href="#hobbies" class="link">hobbies</a></li>
-          <li><a href="#contacto" class="link">contacto</a></li>
-        </ul>
-      </div>
+      </header>
 
-      <!--Historia personal-->
-      <div class="contenedor-historia">
-        <h2 id="datos_personales" class="titulos">Historia Personal</h2>
+      <section>
+      <div class="container">
+        <h2 id="datos_personales" class="titulos">Datos Personales</h2><!--Datos personales-->
         <p>
-          Mi nombre es Agustin Alexis Cruz, soy de Buenos Aires, tengo 19 años y
+          Mi nombre es Agustín Alexis Cruz, soy de Buenos Aires, tengo 19 años y
           mis metas son convertirme en desarrollador full stack senior y ser
           licenciado en informatica.
         </p>
       </div>
-
-        <!--Trayectoria academica -->
-        <div class="contenedor-trayectoria">
-          <h2 id="trayectoria" class="titulos">Trayectoria academica</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+          <h2 id="trayectoria" class="titulos">Trayectoria academica</h2><!--Trayectoria academica -->
           <ul>
             <li>
               Recibido de la escuela de Educacion Secundaria N°31(bachiller en
@@ -56,37 +58,67 @@
               Capacitacion de Primera Etapa del curso de programacion
               #seProgramar
             </li>
+            <li>
+              Estudiante del programa de capacitacion "Argentina programa 4.0"
+            </li>
           </ul>
-        </div>
-        <div class="contenedor-imagen">
-        <!--Imagen de titulo-->
-            <img src="curso_de_argentina_programa/seprogramartitulo.pjg.png" alt="Titulo de Argetina programa">
-        </div>
-      <!--hobbies-->
-      <br>
-      <div class="contenedor-hobbies">
-        <h2 id="hobbies" class="titulos">Hobbies</h2>
-          <ul>
-            <li>Pratico futbol de manera amateur</li>
-            <li>Soy fanatico del Cine</li>
-          </ul>
-      </div>
+        <h2 id="hobbies" class="titulos">Hobbies</h2><!--hobbies-->
+        <ul>
+          <li>Práctico futbol de manera amateur</li>
+          <li>Soy fanático del Cine</li>
+        </ul>
 
-    <!--contacto-->
-    <div class="contenedor-contacto">
-      <h3 id="contacto" class="titulos">Contacto:</h3>
-      <ul>
-        <li>Gmail:agustinalexiscruz0905@gmail.com</li>
-        <li>Telefono Personal:1166053016</li>
-        <li>
-          Instagram:<a
-            href="https://www.instagram.com/tinoelzurdito/"
-            target="_blank"
-            >@tinoelzurdito</a
-          >
-        </li>
-      </ul>
-    </div>
-  </div>
+        </div>
+        <div class="col"><!--Imagen de titulo-->
+          <figure class="figure">
+
+            <img src="imagenes/seprogramartitulo.pjg.png" class="figure-img img-fluid rounded" alt="Titulo de #SéProgramar">
+      
+            <!--<figcaption class="figure-caption">Titulo de #SéProgramar</figcaption>-->
+        
+        </figure>
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <h3 id="contacto" class="titulos">Contacto:</h3><!--contacto-->
+        </div>
+        <div class="row">
+          <div class="col">
+            
+            <ul>
+              <li>
+                Gmail:agustinalexiscruz0905@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>
+                Telefono de contacto:1166053016
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li>
+              Instagram:<a href="https://www.instagram.com/tinoelzurdito/" target="_blank">@tinoelzurdito</a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+    </footer>
+    <script type="text/javascript">
+       <!--
+    document.write("Hola Mundo!")
+    //
+    -->
+    </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
